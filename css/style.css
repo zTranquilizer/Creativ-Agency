@@ -1420,6 +1420,7 @@ body.lock {
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
     overflow: auto;
+    overflow: auto;
   }
 
   .menu-header.active-menu {
