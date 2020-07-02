@@ -1299,7 +1299,7 @@ body.lock {
     position: absolute;
     width: 76px;
     height: 6px;
-    bottom: -57.5px;
+    bottom: -53px;
     left: 0;
     background-color: #11749e;
   }
@@ -1309,7 +1309,7 @@ body.lock {
     position: absolute;
     width: 20px;
     height: 6px;
-    bottom: -58px;
+    bottom: -54px;
     left: 0;
     background-color: #11749e;
   }
@@ -1504,6 +1504,17 @@ body.lock {
 
   .menu-header__link {
     font-size: 22px;
+    width: 100%;
+  }
+
+  .menu-header__bef-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0px auto;
   }
 
   .menu-header__social {
@@ -1597,6 +1608,18 @@ body.lock {
 
   .notes__text p:first-child {
     margin: 0px 0px 15px 0px;
+  }
+
+  .row-application__list li:nth-child(1) {
+    max-width: 100%;
+  }
+
+  .row-application__list li:nth-child(2) {
+    max-width: 100%;
+  }
+
+  .row-application__list li:nth-child(3) {
+    max-width: 100%;
   }
 }
 
