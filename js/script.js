@@ -21,3 +21,13 @@ $(document).ready(function () {
     $("body").toggleClass("lock");
   });
 });
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 115) {
+    $(".header").addClass("fixed-header");
+    $(".full-main__body").addClass("margin");
+    //console.log(123);
+  } else {
+    $(".header").removeClass("fixed-header");
+    $(".full-main__body").removeClass("margin");
+  }
+});
