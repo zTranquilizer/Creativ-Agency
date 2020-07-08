@@ -20,14 +20,34 @@ $(document).ready(function () {
     $(".header__burger, .menu-header").toggleClass("active-menu");
     $("body").toggleClass("lock");
   });
+  $(".full-main__img-scroll").click(function () {
+    elementClick = $(this).attr("href");
+    destination = $(elementClick).offset().top;
+    $("body,html").animate({ scrollTop: destination }, 1500);
+  });
 });
 $(window).scroll(function () {
   if ($(this).scrollTop() > 115) {
     $(".header").addClass("fixed-header");
     $(".full-main__body").addClass("margin");
-    //console.log(123);
   } else {
     $(".header").removeClass("fixed-header");
     $(".full-main__body").removeClass("margin");
+  }
+  if ($(this).scrollTop() > 400) {
+    $(".row-agency__item").slideDown(1000, "linear");
+  } else {
+    $(".row-agency__item").slideUp(100, "linear");
+  }
+  if ($(this).scrollTop() != 0) {
+    $(".but-up").fadeIn(300, "linear");
+  } else {
+    $(".but-up").fadeOut(300, "linear");
+  }
+  $(".but-up").click(function () {
+    $("body,html").animate({ scrollTop: 0 }, 1000);
+  });
+  if ($(this).scrollTop() > 0) {
+    $(".but-up").addClass("unhidden");
   }
 });
