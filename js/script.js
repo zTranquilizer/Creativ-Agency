@@ -17,7 +17,7 @@ testWebP(function (support) {
 
 $(document).ready(function () {
   $(".header__burger").click(function (event) {
-    $(".header__burger, .menu-header").toggleClass("active-menu");
+    $(".header__burger, .menu-header, .header").toggleClass("active-menu");
     $("body").toggleClass("lock");
   });
   $(".full-main__img-scroll").click(function () {

@@ -1554,8 +1554,11 @@ body.lock {
     height: 70px;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.9);
     z-index: 4;
+  }
+
+  .header.active-menu:before {
+    background-color: rgba(0, 0, 0, 0.9);
   }
 
   .header__logo {
