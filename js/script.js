@@ -27,7 +27,6 @@ $(document).ready(function () {
   });
   $(".but-up").click(function () {
     $("body,html").animate({ scrollTop: 0 }, 1000);
-    console.log(animate(scrollTop));
   });
 });
 $(window).scroll(function () {
