@@ -1438,17 +1438,17 @@ body.lock {
   .menu-header__link:hover:after {
     content: "";
     position: absolute;
-    width: 76px;
+    width: 100%;
     height: 6px;
     bottom: -53px;
-    left: -10px;
+    left: 0px;
     background-color: #11749e;
   }
 
   .menu-header__icon:hover:after {
     content: "";
     position: absolute;
-    width: 20px;
+    width: 100%;
     height: 6px;
     bottom: -54px;
     left: 0;
@@ -1709,7 +1709,6 @@ body.lock {
     top: 0;
     left: 0;
     z-index: 4;
-    background-color: rgba(0, 0, 0, 0.9);
   }
 
   .but-up {
